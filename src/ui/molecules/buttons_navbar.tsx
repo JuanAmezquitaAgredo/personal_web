@@ -10,12 +10,12 @@ const list = [
 ];
 
 const Button = styled.button`
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.6); 
   color: ${Colors.textBlack};
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin: 0 10px;
-  border-radius: 5px;
+  border-radius: 50px; 
   cursor: pointer;
 
   &:hover {
@@ -23,6 +23,7 @@ const Button = styled.button`
     transition: font-size 0.5s ease;
   }
 `;
+
 
 const ButtonContainer = styled.div`
   width: auto;

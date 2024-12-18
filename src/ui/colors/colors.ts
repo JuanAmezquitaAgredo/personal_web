@@ -1,11 +1,11 @@
 const Colors = {
-    primary: '#001B48',   
-    secondary: '#02457A', 
-    tertiary: '#018ABE',
-    cuaternary: '#97CADB',
+    primary: '#dcd4cd',   
+    secondary: '#a79f97', 
+    tertiary: '#808080',
+    cuaternary: '#a77f67',
     textWhite: '#FFFFFF',
     textBlack: '#333333',      
-    background: '#D6E8EE',    
+    background: '#e7e3de',    
   };
   
   export default Colors;
