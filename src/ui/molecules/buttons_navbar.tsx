@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import Colors from "../colors/colors";
+import { usePathname } from 'next/navigation';
 
 const list = [
   { name: 'Home', path: '/' },
@@ -9,36 +10,45 @@ const list = [
   { name: 'Portfolio', path: '/portfolio' },
 ];
 
-const Button = styled.button`
-  background-color: rgba(255, 255, 255, 0.6); 
-  color: ${Colors.textBlack};
+interface ButtonProps {
+  $active: boolean;
+}
+
+const Button = styled.button<ButtonProps>`
+  background-color: ${(props) => (props.$active ? 'white' : 'rgba(255, 255, 255, 0.6)')};
+  color: ${(props) => (props.$active ? Colors.textBlack : Colors.textBlack)};
+  font-size: 17px;
+  font-weight: ${(props) => (props.$active ? 'bold' : 'normal')};
   border: none;
   padding: 10px 15px;
-  margin: 0 10px;
-  border-radius: 50px; 
+  margin: 0 15px;
+  border-radius: 50px;
   cursor: pointer;
 
   &:hover {
     font-size: large;
-    transition: font-size 0.5s ease;
+    transition: font-size 0.3s ease;
   }
 `;
 
-
 const ButtonContainer = styled.div`
-  width: auto;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   flex-wrap: wrap;
 `;
 
 export default function ButtonsNavigation() {
+  const path = usePathname();
+
   return (
     <ButtonContainer>
       {list.map((button, index) => (
         <Link key={index} href={button.path} passHref>
-          <Button>{button.name}</Button>
+          <Button as="a" $active={path === button.path}>
+            {button.name}
+          </Button>
         </Link>
       ))}
     </ButtonContainer>
