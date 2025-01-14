@@ -59,7 +59,7 @@ export default function AboutMe() {
   return (
     <AboutMeComponent>
       <ImageComponent>
-        <Image src={'/images/ProfileImage.png'} alt="profile" width={350} height={450} />
+        <Image src={'/images/ProfileImage.png'} alt="profile" width={300} height={400} />
       </ImageComponent>
       <InfoComponent>
         <H1Component>About Me</H1Component>

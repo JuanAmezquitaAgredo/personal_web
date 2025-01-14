@@ -1,7 +1,11 @@
 import AboutMe from "../organisms/aboutme";
+import Education from "../organisms/education";
 
 export default function AboutPage(){
     return(
-        <AboutMe/>
+        <div>
+            <AboutMe/>
+            <Education/>
+        </div>
     )
 };
