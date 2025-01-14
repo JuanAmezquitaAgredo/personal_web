@@ -25,16 +25,16 @@ const H2 = styled.h2`
 `;
     
 
-export default function Navbar(){
-    
-    return(
-        <NavbarComponent>
-            <TitleComponent>
-                <Link href={'/'}>
-                    <H2>Valeria Garcés Mejia</H2>
-                </Link>
-            </TitleComponent>
-            <ButtonsNavigation/>
-        </NavbarComponent>
-    )
-}
+export default function Navbar() {
+    return (
+      <NavbarComponent>
+        <TitleComponent>
+          <Link href="/" passHref>
+            <H2 as="a">Valeria Garcés Mejia</H2>
+          </Link>
+        </TitleComponent>
+        <ButtonsNavigation />
+      </NavbarComponent>
+    );
+  }
+  
