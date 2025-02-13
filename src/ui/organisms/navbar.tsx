@@ -5,9 +5,11 @@ import styled from "styled-components";
 import Colors from "../colors/colors";
 
 const NavbarComponent = styled.nav`
+    width: 100%;
     background-color: ${Colors.primary};
     height: 70px;
     display: flex;
+    justify-content: space-between;
 `;
 
 const TitleComponent = styled.div`
