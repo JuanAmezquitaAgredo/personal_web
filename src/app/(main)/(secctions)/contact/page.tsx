@@ -186,7 +186,7 @@ export default function Contact() {
             <Image src={'/images/ProfileImage.png'} alt="profile" width={300} height={400} />
           </ImageComponent>
           <Title>Contact me</Title>
-          <Subtitle>Hello! I'm here for you. If you'd like to reach out, feel free to send me an email, and I'll get back to you as soon as possible.</Subtitle>
+          <Subtitle>Hello! I&apos;m here for you. If you&apos;d like to reach out, feel free to send me an email, and I&apos;ll get back to you as soon as possible.</Subtitle>
         </TextContainer>
         <FormContainer>
           <FormTitle>Send me a message</FormTitle>
