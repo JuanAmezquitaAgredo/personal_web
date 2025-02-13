@@ -30,7 +30,7 @@ export default function Navbar() {
       <NavbarComponent>
         <TitleComponent>
           <Link href="/" passHref>
-            <H2 as="a">Valeria Garcés Mejia</H2>
+            <H2>Valeria Garcés Mejia</H2>
           </Link>
         </TitleComponent>
         <ButtonsNavigation />

@@ -45,10 +45,8 @@ export default function ButtonsNavigation() {
   return (
     <ButtonContainer>
       {list.map((button, index) => (
-        <Link key={index} href={button.path} passHref>
-          <Button as="a" $active={path === button.path}>
-            {button.name}
-          </Button>
+        <Link key={index} href={button.path}>
+          <Button $active={path === button.path}>{button.name}</Button>
         </Link>
       ))}
     </ButtonContainer>
